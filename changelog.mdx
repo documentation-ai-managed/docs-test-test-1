@@ -1,0 +1,134 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features released in Test test.
+---
+
+## Recent Updates
+
+Stay informed about all changes in Test test. You receive automatic notifications for major releases through your dashboard at `https://dashboard.example.com`.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation spaces, allowing multiple users to edit simultaneously.
+- Introduced webhook support for custom integrations, enabling you to receive events at `https://your-webhook-url.com/webhook`.
+
+## Improvements
+
+- Enhanced search performance by `>40%` for large documentation sites.
+- Updated UI components with the brand color `#3B82F6` for better visual consistency.
+
+## Bug Fixes
+
+- Fixed parsing errors in MDX files containing nested code blocks.
+- Resolved authentication issues with API keys exceeding 100 characters.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Launched customizable themes, including support for your brand color `#3B82F6`.
+- Added API endpoints for programmatic documentation management at `https://api.example.com/v1/docs`.
+
+## Improvements
+
+- Optimized image loading with lazy loading and priority attributes to prevent layout shifts.
+- Improved accessibility with better alt text requirements and keyboard navigation.
+
+## Bug Fixes
+
+- Corrected Mermaid diagram rendering when using sequence diagrams.
+- Patched vulnerability in token handling for auth endpoints.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core MDX documentation engine with support for 15+ components like `<Callout>`, `<Steps>`, and `<Update>`.
+- Integrated authentication system using `YOUR_API_KEY` at `https://auth.example.com`.
+
+## Breaking Changes
+
+- Updated component attribute syntax to require double quotes for strings, e.g., `title="Text"`.
+
+## Bug Fixes
+
+- Initial stability fixes for JSX parsing.
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to upgrade Test test to the latest version.
+
+<Steps>
+  <Step title="Backup" icon="database">
+    Export your current configuration.
+
+````bash
+npx test-test export --output=backup.json
+````
+
+  </Step>
+  <Step title="Install Latest" icon="download">
+
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install test-test@latest
+````
+````bash
+yarn add test-test@latest
+````
+    </CodeGroup>
+
+  </Step>
+  <Step title="Migrate" icon="settings">
+    Run the migration script.
+
+````bash
+npx test-test migrate --from=v1.1.0
+````
+
+  </Step>
+  <Step title="Verify" icon="check-circle">
+    Test your site at `https://docs.example.com`.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Check the [GitHub releases](https://github.com/test-test/releases) for detailed migration guides.
+</Callout>
+
+## Upcoming Features
+
+Preview what's coming next to Test test.
+
+<Columns cols={2}>
+  <Card title="AI Assistant" icon="zap" href="#">
+    Automated content generation and summaries powered by AI.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="#">
+    Full Git integration for documentation workflows.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="#">
+    Track reader engagement and popular pages.
+  </Card>
+  <Card title="Multi-Language" icon="globe" href="#">
+    Built-in i18n support for global audiences.
+  </Card>
+</Columns>
+
+## Version History Summary
+
+| Version | Date       | Key Tags              |
+|---------|------------|-----------------------|
+| v1.2.0  | 2024-10-15 | feature, bugfix      |
+| v1.1.0  | 2024-09-20 | feature, improvement |
+| v1.0.0  | 2024-08-10 | feature, breaking    |
+
+You stay current by subscribing to updates in your dashboard settings.

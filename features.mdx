@@ -1,0 +1,118 @@
+---
+title: Core Features of Test test
+description: Explore the essential tools and capabilities for managing and collaborating on project documentation.
+---
+
+## Overview
+
+Test test provides powerful features to streamline your documentation workflow. You organize content into folders, collaborate with teams using version control, leverage rich markdown formatting, and publish with flexible sharing options. These core capabilities help you maintain professional, up-to-date docs for your projects.
+
+<Columns cols={2}>
+  <Card title="Document Organization" icon="folder" href="#document-organization">
+    Structure your docs hierarchically with folders and subfolders.
+  </Card>
+  <Card title="Collaboration" icon="users" href="#collaboration">
+    Work together with real-time edits and version history.
+  </Card>
+  <Card title="Markdown Support" icon="code" href="#markdown-support">
+    Write rich content using familiar markdown syntax.
+  </Card>
+  <Card title="Publishing Options" icon="share-2" href="#publishing">
+    Share your docs publicly or privately with custom domains.
+  </Card>
+</Columns>
+
+## Document Organization and Folders
+
+Organize your documentation into intuitive folder structures. Create nested folders to group related pages, making navigation easy for you and your team.
+
+<Steps>
+  <Step title="Create a Folder" icon="folder-plus">
+    In the sidebar, click the new folder button and name it, such as `api-reference`.
+  </Step>
+  <Step title="Add Pages" icon="file-plus">
+    Drag pages into folders or create new ones directly inside.
+  </Step>
+  <Step title="Reorder" icon="move">
+    Drag folders and pages to rearrange your structure.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Use descriptive folder names like `getting-started` or `advanced-guides` to improve discoverability.
+</Callout>
+
+## Collaboration and Version Control
+
+Collaborate seamlessly with version history that tracks every change. You invite team members, review edits, and revert if needed, similar to Git but integrated directly into your docs.
+
+<Tabs>
+  <Tab title="Invite Collaborator" icon="user-plus">
+    Go to Settings > Team and add emails. Collaborators get edit access immediately.
+  </Tab>
+  <Tab title="View History" icon="git-branch">
+    Click the history icon on any page to see diffs and restore versions.
+  </Tab>
+</Tabs>
+
+<CodeGroup tabs="Before,After">
+  ```markdown
+  # Old Title
+  Basic content.
+  ```
+  ```markdown
+  # Updated Title
+  Enhanced content with new sections.
+  ```
+</CodeGroup>
+
+## Formatting and Markdown Support
+
+Test test supports full markdown with extensions for tables, code blocks, and more. Write once and render beautifully across devices.
+
+```markdown
+# Heading
+
+- **Bold** and _italic_ text
+- `Inline code`
+- Lists and links: [Test test](https://docs.example.com)
+
+| Feature | Description |
+|---------|-------------|
+| Folders | Organize docs |
+| Collab  | Team edits   |
+```
+
+<Callout kind="info">
+  Advanced syntax like `{@include}` for reusable components is available in Pro plans.
+</Callout>
+
+## Publishing and Sharing Options
+
+Publish your docs instantly with multiple sharing methods. Generate public links, embed pages, or connect custom domains.
+
+<Tabs>
+  <Tab title="Public Link" icon="link">
+    Click Publish > Share Link to get a unique URL like `https://docs.example.com/your-project`.
+  </Tab>
+  <Tab title="Embed" icon="code">
+    Use the embed code:
+    
+    ```
+    <iframe src="https://docs.example.com/embed/page" width="100%" height="600"></iframe>
+    ```
+  </Tab>
+  <Tab title="Custom Domain" icon="globe">
+    In Settings > Domains, add your domain and configure DNS.
+  </Tab>
+</Tabs>
+
+<Expandable title="Advanced Publishing Workflow" default-open="false">
+
+1. Review changes in preview mode.
+2. Select audience (public, team-only).
+3. Deploy with one click.
+
+This ensures your docs stay current without manual exports.
+
+</Expandable>

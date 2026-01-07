@@ -1,0 +1,123 @@
+---
+title: Getting Started with Test test
+description: Set up your account, create your first documentation space, and start organizing your project docs in minutes.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A GitHub account for version control integration
+
+<Callout kind="info">
+
+Test test works best with JavaScript enabled. Disable any strict ad blockers that might interfere with the dashboard.
+
+</Callout>
+
+## Sign Up and Log In
+
+Follow these steps to create your account and access the dashboard.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="globe">
+    Navigate to `https://dashboard.example.com` in your browser.
+  </Step>
+  <Step title="Register Account" icon="user-plus">
+    Click **Sign Up**, enter your email, create a strong password, and verify your email address.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard, enter your credentials, and click **Log In**.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+A documentation space organizes your project docs. Create one in seconds.
+
+<Tabs>
+  <Tab title="From Dashboard" icon="home">
+    <Steps>
+      <Step title="New Space" icon="plus">
+        Click **New Space** on the dashboard.
+      </Step>
+      <Step title="Configure" icon="settings">
+        Enter a name like `my-project-docs`, select public or private visibility, and click **Create**.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Import Existing" icon="upload">
+    <Steps>
+      <Step title="Import Repo" icon="git-branch">
+        Click **Import from GitHub**, authorize Test test, and select your repo.
+      </Step>
+      <Step title="Sync" icon="refresh-cw">
+        Choose the branch (e.g., `main`) and click **Import Space**.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Explore the Interface
+
+Get familiar with the key areas of your documentation space.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor-section">
+    Write MDX docs with live preview, syntax highlighting, and auto-save.
+  </Card>
+  <Card title="Spaces" icon="folder" href="#spaces-section">
+    Manage multiple projects, collaborate with teams, and set permissions.
+  </Card>
+  <Card title="Preview" icon="eye" href="#preview-section">
+    Real-time rendering of your docs with custom themes and navigation.
+  </Card>
+</Columns>
+
+## Create Your First Document
+
+Add a new page to your space.
+
+<Steps>
+  <Step title="New Document" icon="file-plus">
+    In your space, click **New Page** and name it `introduction.mdx`.
+  </Step>
+  <Step title="Add Frontmatter" icon="code">
+    Insert the YAML frontmatter at the top.
+  </Step>
+  <Step title="Write Content" icon="pen-tool">
+    Add headings and components, then publish.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="MDX Example">
+  ```mdx
+---
+title: My First Page
+description: Welcome to my docs.
+---
+
+## Hello World
+
+This is your first document!
+  ```
+</CodeGroup>
+
+<Callout kind="tip">
+
+Save frequently. Test test auto-publishes changes to a live URL like `https://docs.example.com/my-project-docs/introduction`.
+
+</Callout>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and webhooks.
+  </Card>
+  <Card title="Advanced Features" icon="sparkles" href="/introduction">
+    Dive into collaboration and custom themes.
+  </Card>
+</Columns>
